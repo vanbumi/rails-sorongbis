@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @gallery.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @gallery.description %>
+</p>
+
+<p>
+  <strong>Img url:</strong>
+  <%= @gallery.img_url %>
+</p>
+
+<p>
+  <% @gallery.images.each do |image| %>
+      <%= cl_image_tag(image.path, { size: '125x125', crop: :fit }) %>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_gallery_path(@gallery) %> |
+<%= link_to 'Back', galleries_path %>

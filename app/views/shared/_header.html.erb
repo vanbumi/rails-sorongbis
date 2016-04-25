@@ -19,6 +19,25 @@
             <li><a href="">Pasang Iklan</a></li>
             <li><a href="#">Contact</a></li>
             <!-- <li><a href="404.html">404 Page</a></li> -->
+            <li>
+              <ul class="nav pull-right">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+                  <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+                    <form method="post" action="login" accept-charset="UTF-8">
+                      <input style="margin-bottom: 15px;" type="text" placeholder="Username" id="username" name="username">
+                      <input style="margin-bottom: 15px;" type="password" placeholder="Password" id="password" name="password">
+                      <input style="float: left; margin-right: 10px;" type="checkbox" name="remember-me" id="remember-me" value="1">
+                      <label class="string optional" for="user_remember_me"> Remember me</label>
+                      <input class="btn btn-primary btn-block" type="submit" id="sign-in" value="Sign In">
+                      <!-- <label style="text-align:center;margin-top:5px">or</label>
+                      <input class="btn btn-primary btn-block" type="button" id="sign-in-google" value="Sign In with Google">
+                      <input class="btn btn-primary btn-block" type="button" id="sign-in-twitter" value="Sign In with Twitter"> -->
+                    </form>
+                  </div>
+                </li>
+              </ul>
+            </li>
           </ul>           
         </div><!--/.nav-collapse -->
       </div><!--/.container-fluid -->
@@ -42,7 +61,7 @@
   <div class="header_bottom">
     <div class="logo_area">
     <!-- for your image logo -->
-    <a class="logo" href="index.html">
+    <a class="logo" href="/">
      <img src="http://res.cloudinary.com/medio/image/upload/v1461480989/logo_fwvanr.png" alt="logo">
     </a>
 

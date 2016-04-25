@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: sorongbisnis-com
+  api_key: '562546636166546'
+  api_secret: ERn2wOc7R-En-dYWdTBZ7fBelbc
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: sorongbisnis-com
+  api_key: '562546636166546'
+  api_secret: ERn2wOc7R-En-dYWdTBZ7fBelbc
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: sorongbisnis-com
+  api_key: '562546636166546'
+  api_secret: ERn2wOc7R-En-dYWdTBZ7fBelbc
+  enhance_image_tag: true
+  static_image_support: false
