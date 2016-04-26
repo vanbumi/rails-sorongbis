@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :posts
   resources :galleries
 
   get 'admin/dashboard' => 'admin#index'
