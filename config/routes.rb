@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :sub_categories, path: 'admin/sub-categories'
+
   resources :categories, path: 'admin/categories'
 
   resources :posts

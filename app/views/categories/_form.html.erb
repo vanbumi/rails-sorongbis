@@ -23,8 +23,8 @@
     </div>
 
     <div class="field">
-      <%= f.label :level %>
-      <%= f.select(:level, options_for_select([
+      <% f.label :level %>
+      <% f.select(:level, options_for_select([
               ['Parent','Parent'],
               ['Sub','Sub']], @category.level),
               {:prompt => "Pilih.."},
