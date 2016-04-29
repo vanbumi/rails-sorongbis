@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Galleries</h1>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>Gambar</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Image Clone </th>
+
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @galleries.each do |gallery| %>
+      <tr>
+        <td>
+          <% gallery.images.each do |image| %>
+              <%= cl_image_tag(image.path, { size: '125x125', crop: :fit }) %>
+          <% end %>
+        </td>
+        <td><%= gallery.name %></td>
+        <td><%= gallery.description %></td>
+        <td><%= image_tag gallery.img_url, alt: 'image-here' %></td>
+        <td ><%= link_to 'Show', gallery %></td>
+        <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
+        <td><%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gallery', new_gallery_path %>
+
+<p data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-picture text-primary"></span><a href="">Gallery</a></p>

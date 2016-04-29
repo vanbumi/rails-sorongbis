@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :categories, path: 'admin/categories'
+
   resources :posts
+
   resources :galleries
 
   get 'admin/dashboard' => 'admin#index'

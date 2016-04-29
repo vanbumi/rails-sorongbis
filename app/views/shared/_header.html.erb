@@ -71,9 +71,26 @@
       <span>A Pro Magazine Theme</span>
       </a> -->
     </div>
-    <div class="top_addarea">
-      <a href="#"><img src="/theme/img/addbanner_728x90_V1.jpg" alt="img"></a>
+
+    <!--Banner Add Top-->
+    <div class="top_addarea" id="top_addarea">
+      <!--<a href="#"><img src="/theme/img/addbanner_728x90_V1.jpg" alt="img"></a>-->
     </div>
   </div>
   <!-- start header top area -->     
-</header> 
+</header>
+
+<script type="text/babel">
+  var BannerAd = React.createClass({
+    render: function() {
+      return(
+        <img src="http://res.cloudinary.com/sorongbisnis-com/image/upload/v1461705618/addbanner_728x90_V1_udl9rk.jpg" />
+      );
+    }
+  });
+
+  ReactDOM.render(
+      <BannerAd />,
+      document.getElementById('top_addarea')
+  );
+</script>

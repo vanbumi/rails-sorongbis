@@ -1,91 +1,18 @@
-<!-- Admin Top Navbar -->
-<% render "shared/admin_top_navbar" %>
+<!-- Main Content -->
+<div class="container-fluid">
 
-<!-- Admin Side left menu -->
-<div class="row">
-    <!-- uncomment code for absolute positioning tweek see top comment in css -->
-    <!-- <div class="absolute-wrapper"> </div> -->
+    <div class="side-body">
 
-    <!-- Side Menu -->
-    <%= render "shared/admin_sidemenu" %>
+      <!-- admin panel -->
+      <%= render 'shared/admin_panel' %>
+      <!--End Admin Panel-->
 
-    <!-- Main Content -->
-    <div class="container-fluid">
-        <div class="side-body">
-           
-           <!-- admin panel -->
-           <style type="text/css">
-		        /*body { padding-top:20px; }*/
-				.panel-body .btn:not(.btn-block) { 
-					width:125px; 
-					margin-bottom:20px; 
-					/*padding-left: 20px;*/
-				}
-				.panel {
-					/*padding-left: 10px;*/
-				}
-		    </style>
-           <!-- <div class="container"> -->
-			    <div class="row" style="margin-top: 10px">
-			        <div class="col-md-12">
-			            <div class="panel panel-primary">
-			                <div class="panel-heading">
-			                    <h3 class="panel-title">
-			                        <span class="glyphicon glyphicon-bookmark"></span> Quick Shortcuts</h3>
-			                </div>
-			                <div class="panel-body">
-			                    <div class="row">
-			                        <div class="col-xs-6 col-md-6 kiri">
-			                          <a href="#" class="btn btn-danger btn-lg" role="button"><span class="glyphicon glyphicon-list-alt"></span> <br/>Apps</a>&nbsp;&nbsp;
-			                          <a href="#" class="btn btn-warning btn-lg" role="button"><span class="glyphicon glyphicon-bookmark"></span> <br/>Bookmarks</a>&nbsp;&nbsp;
-			                          <a href="#" class="btn btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-signal"></span> <br/>Reports</a>&nbsp;&nbsp;
-			                          <a href="#" class="btn btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-comment"></span> <br/>Comments</a>&nbsp;&nbsp;
-			                          <a href="#" class="btn btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-comment"></span> <br/>Comments</a>&nbsp;&nbsp;
-			                          <a href="#" class="btn btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-comment"></span> <br/>Comments</a>&nbsp;&nbsp;
-			                        </div>
-			                        <div class="col-xs-6 col-md-6 kanan">
-			                          <a href="#" class="btn btn-success btn-lg" role="button"><span class="glyphicon glyphicon-user"></span> <br/>Users</a>&nbsp;&nbsp;
-			                          <a href="#" class="btn btn-info btn-lg" role="button"><span class="glyphicon glyphicon-file"></span> <br/>Notes</a>&nbsp;&nbsp;
-			                          <a href="#" class="btn btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-picture"></span> <br/>Photos</a>&nbsp;&nbsp;
-			                          <a href="#" class="btn btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-tag"></span> <br/>Tags</a>&nbsp;&nbsp;
-			                          <a href="#" class="btn btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-picture"></span> <br/>Photos</a>&nbsp;&nbsp;
-			                          <a href="#" class="btn btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-tag"></span> <br/>Tags</a>
-			                        </div>
-			                    </div>
-			                    <a href="/" target="_blank" class="btn btn-success btn-lg btn-block" role="button"><span class="glyphicon glyphicon-globe"></span> View Website</a>
-			                </div>
-			            </div>
-			        </div>
-			    </div>
-			<!-- </div> -->
-           
-         
-        </div>
     </div>
+
+
+
 </div>
 
-<script type="text/javascript">
-$(function () {
-    $('.navbar-toggle').click(function () {
-        $('.navbar-nav').toggleClass('slide-in');
-        $('.side-body').toggleClass('body-slide-in');
-        $('#search').removeClass('in').addClass('collapse').slideUp(200);
 
-        /// uncomment code for absolute positioning tweek see top comment in css
-        //$('.absolute-wrapper').toggleClass('slide-in');
-        
-    });
-   
-   // Remove menu for searching
-   $('#search-trigger').click(function () {
-        $('.navbar-nav').removeClass('slide-in');
-        $('.side-body').removeClass('body-slide-in');
-
-        /// uncomment code for absolute positioning tweek see top comment in css
-        //$('.absolute-wrapper').removeClass('slide-in');
-
-    });
-});
-</script>
 
 
